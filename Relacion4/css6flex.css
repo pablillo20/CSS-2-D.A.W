@@ -1,0 +1,48 @@
+#testimonials {
+    display: flex; /* Usar flexbox para alinear las tarjetas de testimonios */
+    justify-content: center; /* Centrar las tarjetas horizontalmente */
+    margin: 20px; /* Margen alrededor del contenedor de testimonios */
+}
+
+.testimonials__card {
+    position: relative; /* Permite que el contenido se posicione sobre la imagen */
+    width: 300px; /* Ajusta el tamaño de la tarjeta */
+    margin: 10px; /* Margen entre las tarjetas */
+    overflow: hidden; /* Esconde el contenido que sobresale */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de escala */
+}
+
+.testimonials__card--img img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+}
+
+/* Estilos para el contenido del testimonio */
+.testimonials__card--content {
+    position: relative;
+    bottom: 0; /* Alinea el contenido en la parte inferior */
+    left: 0; /* Alinea el contenido a la izquierda */
+    width: 70%; /* Asegura que el contenido ocupe todo el ancho */
+    height: 70%; /* Asegura que el contenido ocupe toda la altura */
+    padding: 15px; /* Espaciado interno alrededor del contenido */
+    background-color: rgba(0, 128, 0, 0.7); /* Fondo verde casi transparente */
+    color: white; /* Cambia el color del texto a blanco */
+    opacity: 0; /* Inicialmente, el contenido es invisible */
+    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+}
+
+/* Estado por defecto de la tarjeta */
+.testimonials__card {
+    opacity: 1; /* Totalmente visible */
+}
+
+/* Estado hover de la tarjeta */
+.testimonials__card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente al pasar el ratón */
+}
+
+/* Efecto hover en el contenido del testimonio */
+.testimonials__card:hover .testimonials__card--content {
+    opacity: 1; /* Hace que el contenido sea visible al pasar el ratón */
+}

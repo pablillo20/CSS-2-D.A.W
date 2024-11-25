@@ -1,0 +1,18 @@
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: darkred;
+}
+
+.lista-alfabetica li, .lista-cuadrada li, .lista-imagen li {
+    font-family: 'Verdana', sans-serif;
+}
+
+
+.lista-cuadrada {
+    list-style-type: square;
+}
+
+.lista-imagen {
+    list-style-image: url('viñeta.png');
+}

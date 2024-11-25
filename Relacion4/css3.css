@@ -1,0 +1,29 @@
+/* Espaciado de la lista */
+.lista-alfabetica, .lista-cuadrada, .lista-imagen {
+    margin-left: 20px;
+}
+
+/* Separación entre los elementos de la lista*/
+.lista-alfabetica li, .lista-cuadrada li, .lista-imagen li {
+    margin-bottom: 10px;
+}
+
+/* Centrar el encabezado */
+h1 {
+    text-align: center;
+}
+
+/* La lista debe estar al menos 50 píxeles debajo del encabezado */
+.lista-alfabetica, .lista-cuadrada, .lista-imagen {
+    margin-top: 50px;
+}
+
+/* Fondo amarillo claro */
+.lista-cuadrada {
+    background-color: lightyellow;
+}
+
+/* Fondo gris  */
+.lista-cuadrada li {
+    background-color: grey;
+}

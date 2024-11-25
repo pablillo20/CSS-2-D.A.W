@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .izquierda{
+      width: 80%;
+      height: 30vh;
+      border: 1px solid black;
+      display: flex;
+      align-self: center;
+      margin: 10px;
+    }
+
+    .imagen{
+      width: 13%;
+      height: auto;
+
+    }
+    .imagen img{
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+    }
+    .contenido{
+      margin-left: 10px;
+      width: 83%;
+      align-self: flex-start;
+    }
+
+    .derecha{
+      display: flex;
+      width: 80%;
+      height: 30vh;
+      border: 1px solid black;
+      margin: 10px;
+      flex-direction: row-reverse;
+
+    }
+    .derecha .imagen img{
+      align-content: flex-end;
+      object-fit: cover;
+    }
+  </style>
+
+</head>
+<body>
+
+<section class="contenedor">
+  <div class="izquierda">
+
+    <div class="imagen">
+      <img src="https://mediapool.bmwgroup.com/cache/P9/202401/P90536825/P90536825-the-new-bmw-m4-coup-600px.jpg">
+    </div>
+
+    <div class="contenido">
+      <div class="Titulo">
+        <h1>BMW M4</h1>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sint non quasi distinctio.
+        Maiores nam doloribus repudiandae necessitatibus hic, soluta omnis facilis fuga, tempore autem dolore,
+        aperiam consequuntur laboriosam veritatis reiciendis tenetur sequi cum? Magnam eaque, nam natus corrupti
+        quos alias iure ipsa sed laborum in labore, cum voluptatibus pariatur!</p>
+    </div>
+
+  </div>
+
+  <div class="derecha">
+
+    <div class="imagen">
+      <img src="https://mediapool.bmwgroup.com/cache/P9/202401/P90536825/P90536825-the-new-bmw-m4-coup-600px.jpg">
+    </div>
+
+    <div class="contenido">
+      <div class="Titulo">
+        <h1>BMW M4</h1>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab ad blanditiis,
+        totam quam quis corrupti nisi impedit, incidunt consequuntur labore cumque porro
+        repellat ratione aliqua</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+</body>
+</html>

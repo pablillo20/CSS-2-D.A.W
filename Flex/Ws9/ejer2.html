@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout con Flexbox</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header, nav, article, aside, footer {
+      padding: 20px;
+      color: #fff;
+    }
+    header {
+      background-color: #8bc34a;
+    }
+    nav {
+      background-color: #ffecb3;
+      color: #333;
+    }
+    article {
+      background-color: #e3f2fd;
+      color: #333;
+    }
+    aside {
+      background-color: #c8e6c9;
+      color: #333;
+    }
+    footer {
+      background-color: #8bc34a;
+    }
+
+    @media (min-width: 769px) {
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      header, footer {
+        flex: 0 0 auto;
+      }
+      main {
+        display: flex;
+        flex: 1;
+      }
+      nav {
+        flex: 1;
+        max-width: 200px;
+      }
+      article {
+        flex: 3;
+      }
+      aside {
+        flex: 1;
+        max-width: 200px;
+      }
+    }
+
+    @media (min-width: 568px) and (max-width: 768px) {
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      header, footer {
+        flex: 0 0 auto;
+      }
+      main {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+      }
+      nav {
+        order: 2;
+        flex: 1;
+        max-width: 200px;
+      }
+      article {
+        flex: 3;
+      }
+      aside {
+        display: none;
+      }
+    }
+
+    @media (max-width: 567px) {
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      header, footer {
+        flex: 0 0 auto;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+      }
+      nav, article, aside, footer {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>Header</header>
+<main>
+  <nav>Nav</nav>
+  <article>Article</article>
+  <aside>Aside</aside>
+</main>
+<footer>Footer</footer>
+</body>
+</html>
