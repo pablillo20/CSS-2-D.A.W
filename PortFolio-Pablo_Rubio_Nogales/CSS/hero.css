@@ -1,9 +1,16 @@
+:root {
+    --Blanco: #ffffff;
+    --Negro: #000000;
+    --AzulHero: #0d11e7;
+    --MoradoClaro: #B197FC;
+    --NegroTransparente: rgba(0, 0, 0, 0.5);
+}
+
 /* Sección Hero */
 .seccion-hero {
     display: flex;
-    color: white;
+    color: var(--Blanco);
     height: 100vh;
-
 }
 
 /* Información del perfil */
@@ -24,21 +31,21 @@
 /* Texto del perfil */
 .texto-perfil {
     max-width: 40rem;
-    color: #000000;
+    color: var(--Negro);
 }
 
 .texto-perfil h1 {
     font-size: 2.75rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px var(--NegroTransparente);
 }
 
 .texto-perfil h2 {
     font-size: 1.5rem;
     opacity: 0.85;
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px var(--NegroTransparente);
 }
 
 .texto-perfil p {
@@ -52,8 +59,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0d11e7;
-    color: white;
+    background: var(--AzulHero);
+    color: var(--Blanco);
     padding: 1rem 2.5rem;
     border-radius: 2rem;
     font-size: 1.25rem;
@@ -76,7 +83,7 @@
 }
 
 .redes-sociales i {
-    color: #B197FC;
+    color: var(--MoradoClaro);
     margin: 1rem;
     font-size: 2rem;
     transition: transform 0.3s;

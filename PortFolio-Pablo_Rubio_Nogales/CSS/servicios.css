@@ -1,6 +1,13 @@
+:root {
+    --Blanco: white;
+    --Negro: black;
+    --AzulPrincipal: #004aad;
+    --AzulClaro: rgba(139, 169, 241, 0.64);
+}
+
 /* Sección principal */
 .seccion-servicios {
-    background: #ffffff;
+    background: var(--Blanco);
     width: 100%;
     padding: 3rem 1rem;
 }
@@ -11,7 +18,7 @@
     font-size: 2rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    color: black;
+    color: var(--Negro);
 }
 
 /* Contenedor de las cajas: distribución horizontal */
@@ -25,7 +32,7 @@
 
 /* Estilo de las cajas */
 .caja-servicio {
-    background-color: rgba(139, 169, 241, 0.64);
+    background-color: var(--AzulClaro);
     flex: 1;
     max-width: 20rem;
     min-width: 15rem;
@@ -35,12 +42,11 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 /* Iconos dentro de las cajas */
 .icono-servicio {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #004aad;
+    color: var(--AzulPrincipal);
 }
 
 /* Títulos dentro de las cajas */
@@ -54,5 +60,3 @@
     font-size: 1rem;
     line-height: 1.5;
 }
-
-

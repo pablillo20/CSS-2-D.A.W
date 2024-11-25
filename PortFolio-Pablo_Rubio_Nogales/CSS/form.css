@@ -1,7 +1,18 @@
+:root {
+    --Negro: #050505;
+    --AzulOscuro: #0d11e7;
+    --AzulBoton: #003d80;
+    --Blanco: white;
+    --GrisClaro: #ccc;
+    --Rojo: red;
+    --Verde: green;
+    --AzulEnfoque: #007BFF;
+}
+
 /* Sección Contacto */
 .seccion-contacto {
-    background: linear-gradient(135deg, #050505, #0d11e7);    color: white;
-    color: white;
+    background: linear-gradient(135deg, var(--Negro), var(--AzulOscuro));
+    color: var(--Blanco);
     padding: 3.75rem 0;
     width: 100%;
 }
@@ -48,14 +59,13 @@
 }
 
 /* Estilo de los campos de texto del formulario */
-/* Estilo de los campos de texto */
 .formulario-contacto input,
 .formulario-contacto textarea {
     width: 100%;
     padding: 0.625rem;
     margin-bottom: 0.9375rem;
     font-size: 1rem;
-    border: 0.0625rem solid #ccc;
+    border: 0.0625rem solid var(--GrisClaro);
     border-radius: 0.25rem;
 }
 
@@ -63,8 +73,8 @@
 .formulario-contacto button {
     padding: 0.625rem 1.25rem;
     font-size: 1.1rem;
-    background-color: #003d80;
-    color: white;
+    background-color: var(--AzulBoton);
+    color: var(--Blanco);
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
@@ -73,28 +83,21 @@
 
 /* Estilo para campos de entrada vacíos */
 input:invalid, textarea:invalid {
-    border: 2px solid red;
+    border: 2px solid var(--Rojo);
 }
 
 /* Estilo cuando el campo es válido */
 input:valid, textarea:valid {
-    border: 2px solid green;
+    border: 2px solid var(--Verde);
 }
 
 /* Estilo al enfocar en un campo */
 input:focus, textarea:focus {
-    border-color: #007BFF;
+    border-color: var(--AzulEnfoque);
     outline: none;
 }
 
 /* Estilo de campo para telefono que no es obligatorio */
 #telefono input:invalid {
-    border-color: #007BFF;
+    border-color: var(--AzulEnfoque);
 }
-
-
-
-
-
-
-

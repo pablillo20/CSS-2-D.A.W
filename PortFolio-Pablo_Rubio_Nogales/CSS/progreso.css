@@ -1,12 +1,22 @@
+:root {
+    --Blanco: #ffffff;
+    --AzulProgreso: #0d11e7;
+    --MoradoProgreso: #4a00e0;
+    --RosaProgreso: #ff00cc;
+    --SombraProgreso: rgba(0, 0, 0, 0.4);
+    --SombraBarra: rgba(0, 0, 0, 0.3);
+    --SombraProgresoAnimado: rgba(255, 0, 204, 0.5);
+}
+
 /* Contenedor general del progreso */
 .progreso {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #0d11e7, #4a00e0);
+    background: linear-gradient(135deg, var(--AzulProgreso), var(--MoradoProgreso));
     text-align: center;
-    color: white;
+    color: var(--Blanco);
     width: 100%;
     height: 100vh;
     gap: 2rem;
@@ -16,10 +26,9 @@
 .progreso h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    color: var(--Blanco);
+    text-shadow: 2px 2px 4px var(--SombraProgreso);
 }
-
 
 /* Contenedor de cada barra */
 .barra {
@@ -31,7 +40,6 @@
     max-width: 75rem;
 }
 
-
 /* Barra de Progreso */
 .progress {
     display: flex;
@@ -41,16 +49,16 @@
     height: 2.5rem;
     width: 100%;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px var(--SombraBarra);
     position: relative;
 }
 
 /* Progreso animado */
 .progress-value {
-    background: linear-gradient(90deg, #4a00e0, #ff00cc);
+    background: linear-gradient(90deg, var(--MoradoProgreso), var(--RosaProgreso));
     height: 100%;
     width: 0;
     border-radius: 1.5625rem;
     transition: width 3s ease;
-    box-shadow: 0 4px 10px rgba(255, 0, 204, 0.5);
+    box-shadow: 0 4px 10px var(--SombraProgresoAnimado);
 }

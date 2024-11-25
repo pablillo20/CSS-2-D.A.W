@@ -1,8 +1,16 @@
+:root {
+    --Blanco: #ffffff;
+    --NegroOscuro: #050505;
+    --AzulNavbar: #0d11e7;
+    --TextoNavbar: #ffffff;
+    --HoverNavbar: #B197FC;
+}
+
 /* Menú de Navegación */
 .navegacion {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(135deg, #050505, #0d11e7);
+    background: linear-gradient(135deg, var(--NegroOscuro), var(--AzulNavbar));
     padding: 1rem 2rem;
     position: fixed;
     width: 100%;
@@ -23,12 +31,19 @@
 }
 
 .navegacion a {
-    color: white;
+    color: var(--TextoNavbar);
     font-size: 1rem;
     padding: 0.6rem 1.2rem;
     text-transform: uppercase;
     transition: background-color 0.3s, transform 0.3s, color 0.3s ease-in-out;
     font-weight: 600;
+}
+
+/* Efecto al pasar el ratón sobre los enlaces */
+.navegacion a:hover {
+    color: var(--HoverNavbar);
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo sutil al hacer hover */
+    transform: scale(1.1);
 }
 
 /* Menú hamburguesa */
@@ -40,6 +55,7 @@
 .menu-hamburguesa div {
     width: 2.5rem;
     height: 0.3rem;
-    background: white;
+    background: var(--Blanco);
     margin: 0.5rem 0;
 }
+
